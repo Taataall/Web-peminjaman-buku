@@ -1,0 +1,123 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/Admin/**/*';
+@source '../../../../resources/views/filament/admin/**/*';
+
+:root {
+    --paper: #F4EBDD;
+    --ink: #38291F;
+    --rust: #C7653B;
+    --mustard: #D6AD55;
+    --olive: #777653;
+    --primary-50: #FBF4E9;
+    --primary-100: #F5E5D1;
+    --primary-200: #EAC7A4;
+    --primary-300: #DFA477;
+    --primary-400: #D37F55;
+    --primary-500: #C7653B;
+    --primary-600: #B65332;
+    --primary-700: #91432D;
+    --primary-800: #713827;
+    --primary-900: #5A2F23;
+    --primary-950: #321912;
+}
+
+html.fi,
+html.fi body,
+.fi-body,
+.fi-layout {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.fi-sidebar,
+.fi-topbar {
+    background: var(--paper);
+    border-color: rgba(56, 41, 31, .24);
+}
+
+.fi-sidebar-header,
+.fi-topbar nav {
+    border-color: rgba(56, 41, 31, .24);
+}
+
+.fi-sidebar-header .fi-logo,
+.fi-topbar .fi-logo,
+.fi-brand-name {
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 1.15rem;
+    font-weight: 600;
+    letter-spacing: -.02em;
+}
+
+.fi-header-heading,
+.fi-simple-header-heading,
+.fi-section-header-heading,
+.fi-wi-stats-overview-stat-value {
+    color: var(--ink);
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.fi-header-heading,
+.fi-simple-header-heading { font-size: clamp(1.8rem, 3vw, 2.6rem); }
+
+.fi-section,
+.fi-ta-ctn,
+.fi-wi-stats-overview-stat,
+.fi-modal-window,
+.fi-simple-main {
+    border: 1px solid rgba(56, 41, 31, .28);
+    border-radius: 2px;
+    background: #F8F2E8;
+    box-shadow: 5px 5px 0 rgba(56, 41, 31, .08);
+}
+
+.fi-btn {
+    border-radius: 2px;
+    box-shadow: none;
+    font-weight: 600;
+}
+
+.fi-input-wrp {
+    border-color: rgba(56, 41, 31, .42);
+    border-radius: 2px;
+    background: #FFFCF6;
+    box-shadow: none;
+}
+
+.fi-ta-header-cell,
+.fi-ta-row,
+.fi-ta-ctn tfoot {
+    border-color: rgba(56, 41, 31, .18);
+}
+
+.fi-ta-header-cell-label {
+    color: var(--olive);
+    font-size: .68rem;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+
+.fi-sidebar-item-button:hover,
+.fi-sidebar-item-button[aria-current="page"] {
+    background: rgba(199, 101, 59, .10);
+}
+
+.fi-sidebar-item-button[aria-current="page"] .fi-sidebar-item-label {
+    color: var(--rust);
+}
+
+.fi-simple-page {
+    background: var(--paper);
+}
+
+.fi-simple-main {
+    width: min(100% - 2rem, 28rem);
+    padding: 2.5rem;
+}
+
+@media (max-width: 640px) {
+    .fi-simple-main { padding: 1.5rem; }
+}
